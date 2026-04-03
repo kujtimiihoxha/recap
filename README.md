@@ -4,6 +4,8 @@
 
 A CLI agent that analyses meeting transcripts — extracts decisions, ownership, deadlines, and contradictions across multiple documents.
 
+![demo](demo.gif)
+
 Built as an exploration of [Recursive Language Models](https://arxiv.org/abs/2512.24601) (Zhang, Kraska & Khattab, 2025). The core idea from the paper is that long prompts should not be fed into the LLM directly but instead treated as an external environment the model can programmatically interact with. recap applies this by loading documents into a JavaScript sandbox and letting the agent write code to examine, slice, and recursively query sub-LLMs over relevant sections.
 
 ## How it works
